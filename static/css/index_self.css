@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Google Fonts */
+.qwitcher-grypen-bold {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-size: 6.5vw;
+}
+
+.cormorant-garamond-bold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background-size: cover;
+    color: #333;
+    font-family: "Times New Roman", serif;
+    margin-top: 130px;
+    padding: 0;
+}
+
+#base {
+    margin-top: 130px;
+}
+
+/* Flex Layout for Navigation */
+.nav-section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    /* Reduced padding */
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow for better visibility */
+    position: fixed;
+    /* Makes the header fixed */
+    top: 0;
+    /* Sticks to the top */
+    width: 100%;
+    /* Ensures full width */
+    z-index: 1000;
+    /* Keeps it on top of other elements */
+}
+
+.nav-item1 {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-item1 img.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.main_header {
+    margin: 0;
+    color: #444;
+}
+
+.header_item {
+    text-decoration: none;
+    color: #444;
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.header_item:hover {
+    text-decoration: underline;
+    color: #777;
+    font-size: larger;
+}
+
+.h_list {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+.button1 {
+    border: 1px solid #777;
+    border-radius: 15px;
+    padding: 5px 18px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #eee;
+    border-color: #444;
+}
+
+.hr2 {
+    width: 35%;
+    margin: 40px auto;
+    height: 2px;
+    background: #777;
+}
+
+/* Main Section */
+.t1 {
+    font-size: 8vw;
+    margin: 0.1em;
+    line-height: 1.2;
+    color: #333;
+    line-height: 1.1;
+}
+
+.button2 {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px 80px;
+    background: linear-gradient(to right, black, grey);
+    ;
+    color: white;
+    font-size: 2vw;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+
+/* PAGE 2 */
+.nav-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    /* Ensures full width */
+    margin: auto;
+    margin-top: 80px;
+}
+
+.nav-item2 {
+    flex: 1;
+    text-align: center;
+}
+
+.button3 {
+    border: 1px solid black;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 1.5vw;
+}
+
+.button3:hover {
+    background-color: #555;
+
+}
+
+/* For search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    /* Adjust the margin as needed */
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    width: 500px;
+    /* Adjust the width as needed */
+    height: 50px;
+    font-size: 1rem;
+}
+
+#search-button {
+    padding: 8px;
+    /* Make the button a perfect circle */
+    border: none;
+    border-radius: 50%;
+    /* Circular button */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 0px;
+    /* Pull the button slightly inside the input */
+    font-size: 1.5rem;
+    /* Adjust size of the arrow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-button:hover {
+    background-color: #555;
+}
+
+
+/* Flex container for results */
+.results-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Box for AI response */
+.response-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+
+/* Box for YouTube videos */
+.youtube-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px 25px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+
+#ai-output {
+    white-space: pre-wrap;
+}
+
+#videos-list iframe {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-section1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .t1 {
+        font-size: 12vw;
+    }
+
+    .button2 {
+        font-size: 4vw;
+        padding: 8px 20px;
+        width: auto;
+    }
+}

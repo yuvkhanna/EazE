@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>EaZe</title>
+    <link rel="stylesheet" href="../static/css/index_self.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/9d5490de53.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <section class="nav-section1">
+      <nav class="nav-item1">
+        <img class="logo" src="../static/images/logo.jpg" alt="logo" />
+      </nav>
+      <nav class="nav-item1">
+        <h1 class="main_header qwitcher-grypen-bold">EaZe</h1>
+      </nav>
+      <nav class="nav-item1">
+        <ol class="h_list">
+          <li>
+            <a class="header_item" href="#">About</a>
+          </li>
+          <li>
+            <a class="header_item" href="#">Reviews</a>
+          </li>
+          <li class="button1">
+            <a class="header_item" href="#">Login/Signup</a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+
+    <section id="base">
+      <section>
+        <h1 class="center cormorant-garamond-bold t1">
+          Code smarter, <br />
+          Fix faster, <br />
+          Grow stronger. <br />
+        </h1>
+      </section>
+
+      <hr class="hr2 center" />
+
+      <div id="button2" class="center">
+        <p>
+          <a class="button2" href="#button2">Let's get started</a>
+        </p>
+      </div>
+
+      <!-- PAGE 2 -->
+      <section id="nav-section2" class="nav-section2">
+        <nav class="nav-item">
+          <a class="button3" target="_blank" href="https://leetcode.com/">LeetCode</a>
+        </nav>
+        <nav class="nav-item">
+          <a class="button3" target="_blank" href="https://www.w3schools.com/">W3Schools</a>
+        </nav>
+        <nav class="nav-item">
+          <a class="button3" target="_blank" href="https://www.codechef.com/">CodeChef</a>
+        </nav>
+        <nav class="nav-item">
+          <a class="button3" target="_blank" href="https://leetcode.com/">LeetCode</a>
+        </nav>
+      </section>
+
+      <!-- Search bar -->
+      <div class="search-container center">
+        <input type="text" id="search-input" placeholder="Type your query here..." />
+        <button id="search-button">&#8594; <!-- This is a right arrow character --></button>
+      </div>
+
+      <div class="results-container">
+        <!-- Left column for Open AI response -->
+        <div id="ai-response" class="response-box">
+          <h2>Code:</h2>
+          <pre id="ai-output"></pre>
+        </div>
+
+        <!-- Right column for YouTube videos -->
+        <div id="youtube-videos" class="youtube-box">
+          <h2>Related YouTube Videos:</h2>
+          <div id="videos-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <div style="margin-top: 1000px;"></div>
+
+    <script src="../static/js/index_self.js"></script>
+  </body>
+</html>
